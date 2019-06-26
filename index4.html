@@ -18,7 +18,7 @@ sunShape.y = 25;
 stage.addChild(sunShape);
 createjs.Tween.get(sunShape, {loop:true})
     .to({x:525, y:375}, 3000);
-createjs.Ticker.addEvent("tick",tickHandler);    
+createjs.Ticker.addEventListener("tick",tickHandler);    
 }
 function tickHandler(e) {
     stage.update();
