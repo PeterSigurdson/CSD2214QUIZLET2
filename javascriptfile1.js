@@ -1,5 +1,5 @@
 function waitingFn(timeInMs){
-    const futureTime = Date.now() = timeInMs;
+    const futureTime = Date.now() + timeInMs;
 
     while(futureTime > Date.now()){
     // waiting
@@ -7,7 +7,6 @@ function waitingFn(timeInMs){
     }
 
 }
-
-
+debugger;
 waitingFn(3000);
 
