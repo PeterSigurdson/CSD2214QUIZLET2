@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://code.createjs.com/createjs-2013.12.12.min.js"></script>
+<title>Lon Hosford Basic CreateJS Shape Animation</title>
+<script>
+var stage;
+function init()
+{stage = new createjs.Stage("stage-canvas");
+alert(stage.canvas);
+}
+</script>
+<style>
+body {
+margin: 0 ;
+padding: 15px;
+background-color: #ccc;
+}
+canvas {
+border: solid 2px #000;
+background-color: #fff;
+display: block;
+margin: 0px auto 0px auto;
+padding-left: 0;
+padding-right: 0;
+}
+</style>
+</head>
+<body onLoad="init();">
+<canvas id="stage-canvas" width="550" height="400">
+This web browser does not support canvas.
+</canvas>
+</body>
+</html>
